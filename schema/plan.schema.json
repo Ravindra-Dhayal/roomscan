@@ -417,6 +417,12 @@
       "title": "Warnings",
       "type": "array"
     },
+    "diagnostics": {
+      "additionalProperties": true,
+      "description": "per-module run diagnostics (e.g. drift)",
+      "title": "Diagnostics",
+      "type": "object"
+    },
     "timing_s": {
       "additionalProperties": {
         "type": "number"

@@ -80,4 +80,5 @@ class Plan(BaseModel):
     scope_items: list[ScopeItem] = []
     module_status: dict[str, str] = Field(default_factory=dict, description="implemented / not_implemented per module")
     warnings: list[str] = []
+    diagnostics: dict = Field(default_factory=dict, description="per-module run diagnostics (e.g. drift)")
     timing_s: dict[str, float] = {}

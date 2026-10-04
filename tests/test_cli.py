@@ -27,11 +27,11 @@ def test_tier_detection(tmp_path):
     assert pipeline.detect_tier(tmp_path / "p") == "photo"
 
 
-def test_unimplemented_tier_fails_cleanly(tmp_path, capsys):
+def test_invalid_video_fails_cleanly(tmp_path, capsys):
     (tmp_path / "v").mkdir()
     (tmp_path / "v" / "walk.mp4").write_text("x")
-    assert cli.main(["run", str(tmp_path / "v"), "--out", str(tmp_path / "o")]) == 2
-    assert "not implemented" in capsys.readouterr().err
+    assert cli.main(["run", str(tmp_path / "v"), "--out", str(tmp_path / "o")]) == 1
+    assert "no readable images" in capsys.readouterr().err
 
 
 def test_bad_path_exit_code(tmp_path):

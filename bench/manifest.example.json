@@ -1,0 +1,6 @@
+{
+  "captures": [
+    {"id": "flat_lidar_1", "path": "../data/flat/lidar_1", "ground_truth": "ground_truth/flat.json"},
+    {"id": "flat_lidar_2", "path": "../data/flat/lidar_2", "ground_truth": "ground_truth/flat.json", "repeat_of": "flat_lidar_1"}
+  ]
+}

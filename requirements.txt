@@ -6,3 +6,6 @@ pydantic>=2
 matplotlib
 pandas
 pytest
+scikit-image
+pillow
+pillow-heif

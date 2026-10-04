@@ -7,4 +7,5 @@ __pycache__/
 *.pth
 weights/
 out/
+roomscan_submission.zip
 .pytest_cache/

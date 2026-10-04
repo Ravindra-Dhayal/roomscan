@@ -1,0 +1,30 @@
+{
+  "off": {
+    "floor_sigma_m": 0.01952257522048858,
+    "wall_thickness_m": 0.03536509562430303,
+    "wall_cells_2cm": 23054,
+    "footprint_area_m2": 19.395000000000003
+  },
+  "on": {
+    "floor_sigma_m": 0.0195276086849633,
+    "wall_thickness_m": 0.03548297315101591,
+    "wall_cells_2cm": 23010,
+    "footprint_area_m2": 19.402500000000003
+  },
+  "report": {
+    "enabled": true,
+    "n_nodes": 15,
+    "n_candidates": 17,
+    "n_loops": 1,
+    "max_shift_m": 0.0,
+    "max_yaw_deg": 0.0,
+    "dy_range_m": 0.04165737902172251,
+    "applied": false,
+    "val_residual_before_m": NaN,
+    "val_residual_after_m": NaN,
+    "height_anchor_applied": true,
+    "notes": [
+      "loop correction skipped: only 1 loop closures (need >= 6 to validate)"
+    ]
+  }
+}

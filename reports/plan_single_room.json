@@ -1,0 +1,734 @@
+{
+  "schema_version": "0.1.0",
+  "tier": "lidar",
+  "source": "E:\\Projects\\roomscan\\data\\single_room",
+  "rooms": [
+    {
+      "id": 0,
+      "polygon": [
+        [
+          1.367431299202129,
+          2.8073278196008435
+        ],
+        [
+          0.5737501255629361,
+          4.473156551257793
+        ],
+        [
+          0.38867760920349265,
+          4.38497907586606
+        ],
+        [
+          0.15472907040726683,
+          4.876005209028542
+        ],
+        [
+          0.05680402236473616,
+          4.829348991866431
+        ],
+        [
+          -0.1129547658751682,
+          5.185649577408424
+        ],
+        [
+          -1.947871529775366,
+          4.311406707762418
+        ],
+        [
+          -1.5600788879573804,
+          3.497482746704445
+        ],
+        [
+          -1.441889281920052,
+          3.553793976934191
+        ],
+        [
+          -1.0711203650755976,
+          2.7756004969845254
+        ],
+        [
+          -1.095554705455604,
+          2.763958798422505
+        ],
+        [
+          -0.656727763442721,
+          1.8429207890687194
+        ]
+      ],
+      "area": {
+        "value": 6.3725,
+        "lo": 6.0539,
+        "hi": 6.6911,
+        "unit": "m2",
+        "level": 0.95,
+        "calibrated": false,
+        "method": "provisional_heuristic"
+      },
+      "walls": [
+        {
+          "id": "r0w0",
+          "room_id": 0,
+          "p0": [
+            1.367431299202129,
+            2.8073278196008435
+          ],
+          "p1": [
+            0.5737501255629361,
+            4.473156551257793
+          ],
+          "length": {
+            "value": 1.8452,
+            "lo": 1.8152,
+            "hi": 1.8752,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r0w1",
+          "room_id": 0,
+          "p0": [
+            0.5737501255629361,
+            4.473156551257793
+          ],
+          "p1": [
+            0.38867760920349265,
+            4.38497907586606
+          ],
+          "length": {
+            "value": 0.205,
+            "lo": 0.175,
+            "hi": 0.235,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r0w2",
+          "room_id": 0,
+          "p0": [
+            0.38867760920349265,
+            4.38497907586606
+          ],
+          "p1": [
+            0.15472907040726683,
+            4.876005209028542
+          ],
+          "length": {
+            "value": 0.5439,
+            "lo": 0.5139,
+            "hi": 0.5739,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r0w3",
+          "room_id": 0,
+          "p0": [
+            0.15472907040726683,
+            4.876005209028542
+          ],
+          "p1": [
+            0.05680402236473616,
+            4.829348991866431
+          ],
+          "length": {
+            "value": 0.1085,
+            "lo": 0.0785,
+            "hi": 0.1385,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r0w4",
+          "room_id": 0,
+          "p0": [
+            0.05680402236473616,
+            4.829348991866431
+          ],
+          "p1": [
+            -0.1129547658751682,
+            5.185649577408424
+          ],
+          "length": {
+            "value": 0.3947,
+            "lo": 0.3647,
+            "hi": 0.4247,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r0w5",
+          "room_id": 0,
+          "p0": [
+            -0.1129547658751682,
+            5.185649577408424
+          ],
+          "p1": [
+            -1.947871529775366,
+            4.311406707762418
+          ],
+          "length": {
+            "value": 2.0325,
+            "lo": 2.0025,
+            "hi": 2.0625,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r0w6",
+          "room_id": 0,
+          "p0": [
+            -1.947871529775366,
+            4.311406707762418
+          ],
+          "p1": [
+            -1.5600788879573804,
+            3.497482746704445
+          ],
+          "length": {
+            "value": 0.9016,
+            "lo": 0.8716,
+            "hi": 0.9316,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r0w7",
+          "room_id": 0,
+          "p0": [
+            -1.5600788879573804,
+            3.497482746704445
+          ],
+          "p1": [
+            -1.441889281920052,
+            3.553793976934191
+          ],
+          "length": {
+            "value": 0.1309,
+            "lo": 0.1009,
+            "hi": 0.1609,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r0w8",
+          "room_id": 0,
+          "p0": [
+            -1.441889281920052,
+            3.553793976934191
+          ],
+          "p1": [
+            -1.0711203650755976,
+            2.7756004969845254
+          ],
+          "length": {
+            "value": 0.862,
+            "lo": 0.832,
+            "hi": 0.892,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r0w9",
+          "room_id": 0,
+          "p0": [
+            -1.0711203650755976,
+            2.7756004969845254
+          ],
+          "p1": [
+            -1.095554705455604,
+            2.763958798422505
+          ],
+          "length": {
+            "value": 0.0271,
+            "lo": -0.0029,
+            "hi": 0.0571,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r0w10",
+          "room_id": 0,
+          "p0": [
+            -1.095554705455604,
+            2.763958798422505
+          ],
+          "p1": [
+            -0.656727763442721,
+            1.8429207890687194
+          ],
+          "length": {
+            "value": 1.0202,
+            "lo": 0.9902,
+            "hi": 1.0502,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r0w11",
+          "room_id": 0,
+          "p0": [
+            -0.656727763442721,
+            1.8429207890687194
+          ],
+          "p1": [
+            1.367431299202129,
+            2.8073278196008435
+          ],
+          "length": {
+            "value": 2.2422,
+            "lo": 2.2122,
+            "hi": 2.2722,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        }
+      ],
+      "ceiling_height": null,
+      "ceiling_status": "abstain: no sharp ceiling plane (sharpness 1.2, mass 0.000)"
+    },
+    {
+      "id": 1,
+      "polygon": [
+        [
+          -2.018089724807657,
+          1.6714271571340413
+        ],
+        [
+          -1.728024475072377,
+          1.0626196874435232
+        ],
+        [
+          -0.6297020566625995,
+          1.585913474801025
+        ],
+        [
+          -0.6916055060571819,
+          1.7158403875402275
+        ],
+        [
+          -0.6982133033975901,
+          1.712692114102124
+        ],
+        [
+          -1.4537842331869202,
+          3.2985326322495334
+        ],
+        [
+          -4.902263306052598,
+          1.6555108342644411
+        ],
+        [
+          -4.374854176603966,
+          0.5485508730683474
+        ]
+      ],
+      "area": {
+        "value": 6.195,
+        "lo": 5.8853,
+        "hi": 6.5048,
+        "unit": "m2",
+        "level": 0.95,
+        "calibrated": false,
+        "method": "provisional_heuristic"
+      },
+      "walls": [
+        {
+          "id": "r1w0",
+          "room_id": 1,
+          "p0": [
+            -2.018089724807657,
+            1.6714271571340413
+          ],
+          "p1": [
+            -1.728024475072377,
+            1.0626196874435232
+          ],
+          "length": {
+            "value": 0.6744,
+            "lo": 0.6444,
+            "hi": 0.7044,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r1w1",
+          "room_id": 1,
+          "p0": [
+            -1.728024475072377,
+            1.0626196874435232
+          ],
+          "p1": [
+            -0.6297020566625995,
+            1.585913474801025
+          ],
+          "length": {
+            "value": 1.2166,
+            "lo": 1.1866,
+            "hi": 1.2466,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r1w2",
+          "room_id": 1,
+          "p0": [
+            -0.6297020566625995,
+            1.585913474801025
+          ],
+          "p1": [
+            -0.6916055060571819,
+            1.7158403875402275
+          ],
+          "length": {
+            "value": 0.1439,
+            "lo": 0.1139,
+            "hi": 0.1739,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r1w3",
+          "room_id": 1,
+          "p0": [
+            -0.6916055060571819,
+            1.7158403875402275
+          ],
+          "p1": [
+            -0.6982133033975901,
+            1.712692114102124
+          ],
+          "length": {
+            "value": 0.0073,
+            "lo": -0.0227,
+            "hi": 0.0373,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r1w4",
+          "room_id": 1,
+          "p0": [
+            -0.6982133033975901,
+            1.712692114102124
+          ],
+          "p1": [
+            -1.4537842331869202,
+            3.2985326322495334
+          ],
+          "length": {
+            "value": 1.7566,
+            "lo": 1.7266,
+            "hi": 1.7866,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r1w5",
+          "room_id": 1,
+          "p0": [
+            -1.4537842331869202,
+            3.2985326322495334
+          ],
+          "p1": [
+            -4.902263306052598,
+            1.6555108342644411
+          ],
+          "length": {
+            "value": 3.8199,
+            "lo": 3.7817,
+            "hi": 3.8581,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r1w6",
+          "room_id": 1,
+          "p0": [
+            -4.902263306052598,
+            1.6555108342644411
+          ],
+          "p1": [
+            -4.374854176603966,
+            0.5485508730683474
+          ],
+          "length": {
+            "value": 1.2262,
+            "lo": 1.1962,
+            "hi": 1.2562,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r1w7",
+          "room_id": 1,
+          "p0": [
+            -4.374854176603966,
+            0.5485508730683474
+          ],
+          "p1": [
+            -2.018089724807657,
+            1.6714271571340413
+          ],
+          "length": {
+            "value": 2.6106,
+            "lo": 2.5806,
+            "hi": 2.6406,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        }
+      ],
+      "ceiling_height": null,
+      "ceiling_status": "abstain: no data above minimum ceiling height"
+    },
+    {
+      "id": 2,
+      "polygon": [
+        [
+          -4.530513627310671,
+          0.9403724826201265
+        ],
+        [
+          -5.071393496250716,
+          2.0756056921012567
+        ],
+        [
+          -6.468620568149551,
+          1.4098993075306896
+        ],
+        [
+          -5.927740699209507,
+          0.27466609804955944
+        ]
+      ],
+      "area": {
+        "value": 2.4425,
+        "lo": 2.1425,
+        "hi": 2.7425,
+        "unit": "m2",
+        "level": 0.95,
+        "calibrated": false,
+        "method": "provisional_heuristic"
+      },
+      "walls": [
+        {
+          "id": "r2w0",
+          "room_id": 2,
+          "p0": [
+            -4.530513627310671,
+            0.9403724826201265
+          ],
+          "p1": [
+            -5.071393496250716,
+            2.0756056921012567
+          ],
+          "length": {
+            "value": 1.2575,
+            "lo": 1.2275,
+            "hi": 1.2875,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r2w1",
+          "room_id": 2,
+          "p0": [
+            -5.071393496250716,
+            2.0756056921012567
+          ],
+          "p1": [
+            -6.468620568149551,
+            1.4098993075306896
+          ],
+          "length": {
+            "value": 1.5477,
+            "lo": 1.5177,
+            "hi": 1.5777,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r2w2",
+          "room_id": 2,
+          "p0": [
+            -6.468620568149551,
+            1.4098993075306896
+          ],
+          "p1": [
+            -5.927740699209507,
+            0.27466609804955944
+          ],
+          "length": {
+            "value": 1.2575,
+            "lo": 1.2275,
+            "hi": 1.2875,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        },
+        {
+          "id": "r2w3",
+          "room_id": 2,
+          "p0": [
+            -5.927740699209507,
+            0.27466609804955944
+          ],
+          "p1": [
+            -4.530513627310671,
+            0.9403724826201265
+          ],
+          "length": {
+            "value": 1.5477,
+            "lo": 1.5177,
+            "hi": 1.5777,
+            "unit": "m",
+            "level": 0.95,
+            "calibrated": false,
+            "method": "provisional_heuristic"
+          }
+        }
+      ],
+      "ceiling_height": null,
+      "ceiling_status": "abstain: no data above minimum ceiling height"
+    }
+  ],
+  "openings": [
+    {
+      "id": "o0",
+      "kind": "door",
+      "room_ids": [
+        1,
+        2
+      ],
+      "p0": [
+        -4.799567097730112,
+        1.9580933104815983
+      ],
+      "p1": [
+        -4.799567097730112,
+        0.7994974384144504
+      ],
+      "width": {
+        "value": 1.1586,
+        "lo": 1.1086,
+        "hi": 1.2086,
+        "unit": "m",
+        "level": 0.95,
+        "calibrated": false,
+        "method": "provisional_heuristic"
+      }
+    }
+  ],
+  "adjacency": [
+    [
+      1,
+      2
+    ]
+  ],
+  "damage_regions": [],
+  "concealed_damage_flags": [],
+  "scope_items": [],
+  "module_status": {
+    "rooms": "implemented",
+    "doors": "implemented",
+    "windows": "not_implemented",
+    "drift": "implemented",
+    "damage": "not_implemented",
+    "scope": "not_implemented",
+    "calibration": "provisional"
+  },
+  "warnings": [
+    "Confidence intervals are provisional (calibrated=false) until calibrate.py is fitted.",
+    "loop correction skipped: only 1 loop closures (need >= 6 to validate)"
+  ],
+  "diagnostics": {
+    "drift": {
+      "enabled": true,
+      "n_nodes": 15,
+      "n_candidates": 17,
+      "n_loops": 1,
+      "max_shift_m": 0.0,
+      "max_yaw_deg": 0.0,
+      "dy_range_m": 0.041655179130709374,
+      "applied": false,
+      "val_residual_before_m": null,
+      "val_residual_after_m": null,
+      "height_anchor_applied": true,
+      "notes": [
+        "loop correction skipped: only 1 loop closures (need >= 6 to validate)"
+      ]
+    }
+  },
+  "timing_s": {
+    "load": 0.02,
+    "drift": 4.24,
+    "fuse": 1.49,
+    "geometry": 0.35
+  }
+}

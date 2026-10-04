@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "repository_documents": true,
+    "checked_in_raw_capture_folders": true,
+    "video_capture_evidence": true,
+    "independent_photo_capture_evidence": false,
+    "scored_benchmark_manifest_and_ground_truth": false,
+    "calibration_fit": false,
+    "consumer_app_export": false,
+    "fixloop_results": false
+  },
+  "files": {
+    "README.md": true,
+    "COMPLIANCE.md": true,
+    "CAPTURE_PROTOCOL.md": true,
+    "DEVICE_MATRIX.md": true,
+    "TECHNICAL_REPORT.md": true,
+    "bench/README.md": true,
+    "bench/manifest.example.json": true,
+    "fixloop/DECLARATION.md": true
+  },
+  "capture_folders": [
+    "single_room",
+    "single_scan_floor_only",
+    "single_scan_with_ceiling"
+  ],
+  "video_files": [
+    "data\\single_scan_with_ceiling\\c7d28f72c6\\rgb.mp4",
+    "data\\single_scan_floor_only\\1a8384c3f6\\rgb.mp4",
+    "data\\single_room\\c00a170fe1\\rgb.mp4"
+  ],
+  "photo_files": [],
+  "ready": false,
+  "blocked_by_external_evidence": [
+    "independent_photo_capture_evidence",
+    "scored_benchmark_manifest_and_ground_truth",
+    "calibration_fit",
+    "consumer_app_export",
+    "fixloop_results"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "capture_id": "flat_lidar_1",
+  "note": "Metres. Measure INSIDE wall faces with a laser/tape. List every wall of every room you can measure; list each doorway/window clear width; ceiling_height null if you cannot measure it.",
+  "rooms": [
+    {"name": "bedroom", "area": null, "ceiling_height": 2.71, "walls": [3.52, 3.01, 3.50, 3.02]},
+    {"name": "hall", "area": null, "ceiling_height": 2.71, "walls": [1.10, 4.20, 1.10, 4.20]}
+  ],
+  "openings": [
+    {"kind": "door", "width": 0.82},
+    {"kind": "window", "width": 1.20}
+  ],
+  "adjacency": [["bedroom", "hall"]],
+  "footprint_area": null
+}
