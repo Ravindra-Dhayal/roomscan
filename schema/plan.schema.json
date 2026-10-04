@@ -1,0 +1,438 @@
+{
+  "$defs": {
+    "ConcealedFlag": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "surface": {
+          "title": "Surface",
+          "type": "string"
+        },
+        "rule": {
+          "title": "Rule",
+          "type": "string"
+        },
+        "detail": {
+          "title": "Detail",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "surface",
+        "rule",
+        "detail"
+      ],
+      "title": "ConcealedFlag",
+      "type": "object"
+    },
+    "DamageRegion": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "surface": {
+          "title": "Surface",
+          "type": "string"
+        },
+        "damage_class": {
+          "title": "Damage Class",
+          "type": "string"
+        },
+        "extent": {
+          "$ref": "#/$defs/Interval"
+        },
+        "confidence": {
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "surface",
+        "damage_class",
+        "extent",
+        "confidence"
+      ],
+      "title": "DamageRegion",
+      "type": "object"
+    },
+    "Interval": {
+      "description": "A measurement with a confidence interval. `calibrated` is False until the interval width\nhas been fitted on benchmark data; consumers must not treat an uncalibrated interval as a\ncoverage guarantee.",
+      "properties": {
+        "value": {
+          "title": "Value",
+          "type": "number"
+        },
+        "lo": {
+          "title": "Lo",
+          "type": "number"
+        },
+        "hi": {
+          "title": "Hi",
+          "type": "number"
+        },
+        "unit": {
+          "default": "m",
+          "enum": [
+            "m",
+            "m2"
+          ],
+          "title": "Unit",
+          "type": "string"
+        },
+        "level": {
+          "default": 0.95,
+          "title": "Level",
+          "type": "number"
+        },
+        "calibrated": {
+          "default": false,
+          "title": "Calibrated",
+          "type": "boolean"
+        },
+        "method": {
+          "default": "provisional_heuristic",
+          "title": "Method",
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "lo",
+        "hi"
+      ],
+      "title": "Interval",
+      "type": "object"
+    },
+    "Opening": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "door",
+            "window"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "room_ids": {
+          "anyOf": [
+            {
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "integer"
+                }
+              ],
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Room Ids"
+        },
+        "p0": {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "P0",
+          "type": "array"
+        },
+        "p1": {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "P1",
+          "type": "array"
+        },
+        "width": {
+          "$ref": "#/$defs/Interval"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "p0",
+        "p1",
+        "width"
+      ],
+      "title": "Opening",
+      "type": "object"
+    },
+    "Room": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "integer"
+        },
+        "polygon": {
+          "description": "Outline in plan metres (x, z), counter-clockwise",
+          "items": {
+            "maxItems": 2,
+            "minItems": 2,
+            "prefixItems": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "type": "array"
+          },
+          "title": "Polygon",
+          "type": "array"
+        },
+        "area": {
+          "$ref": "#/$defs/Interval"
+        },
+        "walls": {
+          "items": {
+            "$ref": "#/$defs/Wall"
+          },
+          "title": "Walls",
+          "type": "array"
+        },
+        "ceiling_height": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Interval"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "null when not observed; see ceiling_status"
+        },
+        "ceiling_status": {
+          "title": "Ceiling Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "polygon",
+        "area",
+        "walls",
+        "ceiling_status"
+      ],
+      "title": "Room",
+      "type": "object"
+    },
+    "ScopeItem": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "surface": {
+          "title": "Surface",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "quantity": {
+          "$ref": "#/$defs/Interval"
+        }
+      },
+      "required": [
+        "id",
+        "surface",
+        "description",
+        "quantity"
+      ],
+      "title": "ScopeItem",
+      "type": "object"
+    },
+    "Wall": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "room_id": {
+          "title": "Room Id",
+          "type": "integer"
+        },
+        "p0": {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "P0",
+          "type": "array"
+        },
+        "p1": {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "P1",
+          "type": "array"
+        },
+        "length": {
+          "$ref": "#/$defs/Interval"
+        }
+      },
+      "required": [
+        "id",
+        "room_id",
+        "p0",
+        "p1",
+        "length"
+      ],
+      "title": "Wall",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "schema_version": {
+      "default": "0.1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "tier": {
+      "enum": [
+        "photo",
+        "video",
+        "lidar"
+      ],
+      "title": "Tier",
+      "type": "string"
+    },
+    "source": {
+      "title": "Source",
+      "type": "string"
+    },
+    "rooms": {
+      "items": {
+        "$ref": "#/$defs/Room"
+      },
+      "title": "Rooms",
+      "type": "array"
+    },
+    "openings": {
+      "items": {
+        "$ref": "#/$defs/Opening"
+      },
+      "title": "Openings",
+      "type": "array"
+    },
+    "adjacency": {
+      "items": {
+        "maxItems": 2,
+        "minItems": 2,
+        "prefixItems": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "integer"
+          }
+        ],
+        "type": "array"
+      },
+      "title": "Adjacency",
+      "type": "array"
+    },
+    "damage_regions": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/DamageRegion"
+      },
+      "title": "Damage Regions",
+      "type": "array"
+    },
+    "concealed_damage_flags": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/ConcealedFlag"
+      },
+      "title": "Concealed Damage Flags",
+      "type": "array"
+    },
+    "scope_items": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/ScopeItem"
+      },
+      "title": "Scope Items",
+      "type": "array"
+    },
+    "module_status": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "implemented / not_implemented per module",
+      "title": "Module Status",
+      "type": "object"
+    },
+    "warnings": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    },
+    "timing_s": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "default": {},
+      "title": "Timing S",
+      "type": "object"
+    }
+  },
+  "required": [
+    "tier",
+    "source",
+    "rooms",
+    "openings",
+    "adjacency"
+  ],
+  "title": "Plan",
+  "type": "object"
+}
